@@ -8,12 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var board: Board?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setUp()
+        playChess()
     }
-
-
+    
+    func setUp() {
+        board = Board()
+    }
+    
+    func playChess() {
+        guard let board = board else { return }
+        
+        board.move(from: "A2", to: "A3")
+    }
 }
 

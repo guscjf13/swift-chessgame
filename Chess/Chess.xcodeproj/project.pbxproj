@@ -13,6 +13,10 @@
 		43FDFD7D28604EB1005C2CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FDFD7B28604EB1005C2CF4 /* Main.storyboard */; };
 		43FDFD7F28604EB2005C2CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FDFD7E28604EB2005C2CF4 /* Assets.xcassets */; };
 		43FDFD8228604EB2005C2CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FDFD8028604EB2005C2CF4 /* LaunchScreen.storyboard */; };
+		43FDFD8D28605024005C2CF4 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD8C28605024005C2CF4 /* Board.swift */; };
+		43FDFD8F28605400005C2CF4 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD8E28605400005C2CF4 /* Unit.swift */; };
+		43FDFD9128605AE6005C2CF4 /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9028605AE6005C2CF4 /* Pawn.swift */; };
+		43FDFD9328607FFC005C2CF4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9228607FFC005C2CF4 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		43FDFD7E28604EB2005C2CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43FDFD8128604EB2005C2CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43FDFD8328604EB2005C2CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43FDFD8C28605024005C2CF4 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		43FDFD8E28605400005C2CF4 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		43FDFD9028605AE6005C2CF4 /* Pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pawn.swift; sourceTree = "<group>"; };
+		43FDFD9228607FFC005C2CF4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		43FDFD7428604EB1005C2CF4 /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				43FDFD8928604FA4005C2CF4 /* Model */,
+				43FDFD9228607FFC005C2CF4 /* String+.swift */,
+				43FDFD7928604EB1005C2CF4 /* ViewController.swift */,
 				43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */,
 				43FDFD7728604EB1005C2CF4 /* SceneDelegate.swift */,
-				43FDFD7928604EB1005C2CF4 /* ViewController.swift */,
 				43FDFD7B28604EB1005C2CF4 /* Main.storyboard */,
-				43FDFD7E28604EB2005C2CF4 /* Assets.xcassets */,
 				43FDFD8028604EB2005C2CF4 /* LaunchScreen.storyboard */,
+				43FDFD7E28604EB2005C2CF4 /* Assets.xcassets */,
 				43FDFD8328604EB2005C2CF4 /* Info.plist */,
 			);
 			path = Chess;
+			sourceTree = "<group>";
+		};
+		43FDFD8928604FA4005C2CF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43FDFD8E28605400005C2CF4 /* Unit.swift */,
+				43FDFD9028605AE6005C2CF4 /* Pawn.swift */,
+				43FDFD8C28605024005C2CF4 /* Board.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FDFD7A28604EB1005C2CF4 /* ViewController.swift in Sources */,
+				43FDFD9128605AE6005C2CF4 /* Pawn.swift in Sources */,
 				43FDFD7628604EB1005C2CF4 /* AppDelegate.swift in Sources */,
+				43FDFD8D28605024005C2CF4 /* Board.swift in Sources */,
+				43FDFD8F28605400005C2CF4 /* Unit.swift in Sources */,
+				43FDFD9328607FFC005C2CF4 /* String+.swift in Sources */,
 				43FDFD7828604EB1005C2CF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
