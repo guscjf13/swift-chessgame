@@ -38,9 +38,6 @@ extension String {
             file = 0
         }
         
-//        A2 = 1 0
-//        B2 = 1 1
-//        C2 = 1 2
         return Coordinate(x: file, y: rank-1)
     }
 }
