@@ -17,7 +17,18 @@
 		43FDFD8F28605400005C2CF4 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD8E28605400005C2CF4 /* Unit.swift */; };
 		43FDFD9128605AE6005C2CF4 /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9028605AE6005C2CF4 /* Pawn.swift */; };
 		43FDFD9328607FFC005C2CF4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9228607FFC005C2CF4 /* String+.swift */; };
+		43FDFD9B286088D9005C2CF4 /* ChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9A286088D9005C2CF4 /* ChessTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43FDFD9C286088D9005C2CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43FDFD6A28604EB1005C2CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43FDFD7128604EB1005C2CF4;
+			remoteInfo = Chess;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		43FDFD7228604EB1005C2CF4 /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,19 @@
 		43FDFD8E28605400005C2CF4 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		43FDFD9028605AE6005C2CF4 /* Pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pawn.swift; sourceTree = "<group>"; };
 		43FDFD9228607FFC005C2CF4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		43FDFD98286088D9005C2CF4 /* ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43FDFD9A286088D9005C2CF4 /* ChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		43FDFD6F28604EB1005C2CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FDFD95286088D9005C2CF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				43FDFD7428604EB1005C2CF4 /* Chess */,
+				43FDFD99286088D9005C2CF4 /* ChessTests */,
 				43FDFD7328604EB1005C2CF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				43FDFD7228604EB1005C2CF4 /* Chess.app */,
+				43FDFD98286088D9005C2CF4 /* ChessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +109,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		43FDFD99286088D9005C2CF4 /* ChessTests */ = {
+			isa = PBXGroup;
+			children = (
+				43FDFD9A286088D9005C2CF4 /* ChessTests.swift */,
+			);
+			path = ChessTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +137,24 @@
 			productReference = 43FDFD7228604EB1005C2CF4 /* Chess.app */;
 			productType = "com.apple.product-type.application";
 		};
+		43FDFD97286088D9005C2CF4 /* ChessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43FDFD9E286088D9005C2CF4 /* Build configuration list for PBXNativeTarget "ChessTests" */;
+			buildPhases = (
+				43FDFD94286088D9005C2CF4 /* Sources */,
+				43FDFD95286088D9005C2CF4 /* Frameworks */,
+				43FDFD96286088D9005C2CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43FDFD9D286088D9005C2CF4 /* PBXTargetDependency */,
+			);
+			name = ChessTests;
+			productName = ChessTests;
+			productReference = 43FDFD98286088D9005C2CF4 /* ChessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -119,6 +167,10 @@
 				TargetAttributes = {
 					43FDFD7128604EB1005C2CF4 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					43FDFD97286088D9005C2CF4 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 43FDFD7128604EB1005C2CF4;
 					};
 				};
 			};
@@ -136,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				43FDFD7128604EB1005C2CF4 /* Chess */,
+				43FDFD97286088D9005C2CF4 /* ChessTests */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +201,13 @@
 				43FDFD8228604EB2005C2CF4 /* LaunchScreen.storyboard in Resources */,
 				43FDFD7F28604EB2005C2CF4 /* Assets.xcassets in Resources */,
 				43FDFD7D28604EB1005C2CF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FDFD96286088D9005C2CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43FDFD94286088D9005C2CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FDFD9B286088D9005C2CF4 /* ChessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43FDFD9D286088D9005C2CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43FDFD7128604EB1005C2CF4 /* Chess */;
+			targetProxy = 43FDFD9C286088D9005C2CF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		43FDFD7B28604EB1005C2CF4 /* Main.storyboard */ = {
@@ -360,6 +436,40 @@
 			};
 			name = Release;
 		};
+		43FDFD9F286088D9005C2CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = herb.salt.ChessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess.app/Chess";
+			};
+			name = Debug;
+		};
+		43FDFDA0286088D9005C2CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = herb.salt.ChessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess.app/Chess";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +487,15 @@
 			buildConfigurations = (
 				43FDFD8728604EB2005C2CF4 /* Debug */,
 				43FDFD8828604EB2005C2CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43FDFD9E286088D9005C2CF4 /* Build configuration list for PBXNativeTarget "ChessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43FDFD9F286088D9005C2CF4 /* Debug */,
+				43FDFDA0286088D9005C2CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
