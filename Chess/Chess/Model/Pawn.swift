@@ -9,11 +9,9 @@ import Foundation
 
 class Pawn: Unit {
     
-    override var score: Int {
-        return 1
-    }
-    
-    override var character: String {
+    var score: Int = 1
+    var team: Team
+    var character: String {
         switch team {
         case .black:
             return "\u{265F}"
@@ -22,7 +20,11 @@ class Pawn: Unit {
         }
     }
     
-    override func movableLocations(from: String) -> [Coordinate] {
+    init(team: Team) {
+        self.team = team
+    }
+    
+    func movableLocations(from: String) -> [Coordinate] {
         let fromCoordinate = from.toCoordinate()
         
         switch team {

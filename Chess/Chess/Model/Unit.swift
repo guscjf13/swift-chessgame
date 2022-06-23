@@ -7,25 +7,12 @@
 
 import Foundation
 
-class Unit {
+protocol Unit {
+    var character: String { get }
+    var score: Int { get }
+    var team: Team { get }
     
-    var character: String {
-        return "."
-    }
-    
-    var score: Int {
-        return 0
-    }
-    
-    var team: Team
-    
-    init(team: Team) {
-        self.team = team
-    }
-    
-    func movableLocations(from: String) -> [Coordinate] {
-        return []
-    }
+    func movableLocations(from: String) -> [Coordinate]
 }
 
 enum Team: String {
