@@ -12,7 +12,7 @@ protocol Unit {
     var score: Int { get }
     var team: Team { get }
     
-    func movableLocations(from: Coordinate) -> [Coordinate]
+    func movableLocations(from: Coordinate, board: Board) -> [Coordinate]
 }
 
 enum Team: String {
@@ -23,6 +23,10 @@ enum Team: String {
 class Coordinate: Equatable {
     var x: Int
     var y: Int
+    
+    var isInBoard: Bool {
+        return x >= 0 && x <= 7 && y >= 0 && y <= 7
+    }
     
     init(x: Int, y: Int) {
         self.x = x

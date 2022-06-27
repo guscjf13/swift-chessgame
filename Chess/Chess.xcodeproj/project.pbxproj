@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		43C7AB2F286987EC009572A0 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB2E286987EC009572A0 /* BoardView.swift */; };
+		43C7AB3428698CB7009572A0 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB3328698CB7009572A0 /* Knight.swift */; };
+		43C7AB3628698CCC009572A0 /* Biship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB3528698CCC009572A0 /* Biship.swift */; };
+		43C7AB3828698CD4009572A0 /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB3728698CD4009572A0 /* Rook.swift */; };
+		43C7AB3A28698CDC009572A0 /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB3928698CDC009572A0 /* Queen.swift */; };
 		43FDFD7628604EB1005C2CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */; };
 		43FDFD7828604EB1005C2CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD7728604EB1005C2CF4 /* SceneDelegate.swift */; };
 		43FDFD7A28604EB1005C2CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD7928604EB1005C2CF4 /* ViewController.swift */; };
@@ -33,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		43C7AB2E286987EC009572A0 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		43C7AB3328698CB7009572A0 /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		43C7AB3528698CCC009572A0 /* Biship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biship.swift; sourceTree = "<group>"; };
+		43C7AB3728698CD4009572A0 /* Rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
+		43C7AB3928698CDC009572A0 /* Queen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
 		43FDFD7228604EB1005C2CF4 /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43FDFD7728604EB1005C2CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,9 +137,13 @@
 		43FDFD8928604FA4005C2CF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				43FDFD8C28605024005C2CF4 /* Board.swift */,
 				43FDFD8E28605400005C2CF4 /* Unit.swift */,
 				43FDFD9028605AE6005C2CF4 /* Pawn.swift */,
-				43FDFD8C28605024005C2CF4 /* Board.swift */,
+				43C7AB3328698CB7009572A0 /* Knight.swift */,
+				43C7AB3528698CCC009572A0 /* Biship.swift */,
+				43C7AB3728698CD4009572A0 /* Rook.swift */,
+				43C7AB3928698CDC009572A0 /* Queen.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,12 +257,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C7AB3A28698CDC009572A0 /* Queen.swift in Sources */,
 				43FDFD7A28604EB1005C2CF4 /* ViewController.swift in Sources */,
 				43FDFD9128605AE6005C2CF4 /* Pawn.swift in Sources */,
+				43C7AB3628698CCC009572A0 /* Biship.swift in Sources */,
 				43FDFD7628604EB1005C2CF4 /* AppDelegate.swift in Sources */,
 				43FDFD8D28605024005C2CF4 /* Board.swift in Sources */,
+				43C7AB3428698CB7009572A0 /* Knight.swift in Sources */,
 				43FDFD8F28605400005C2CF4 /* Unit.swift in Sources */,
 				43C7AB2F286987EC009572A0 /* BoardView.swift in Sources */,
+				43C7AB3828698CD4009572A0 /* Rook.swift in Sources */,
 				43FDFD9328607FFC005C2CF4 /* String+.swift in Sources */,
 				43FDFD7828604EB1005C2CF4 /* SceneDelegate.swift in Sources */,
 			);

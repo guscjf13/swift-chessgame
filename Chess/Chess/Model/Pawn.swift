@@ -24,7 +24,7 @@ class Pawn: Unit {
         self.team = team
     }
     
-    func movableLocations(from: Coordinate) -> [Coordinate] {
+    func movableLocations(from: Coordinate, board: Board) -> [Coordinate] {
         switch team {
         case .black:
             return [Coordinate(x: from.x, y: from.y+1)]

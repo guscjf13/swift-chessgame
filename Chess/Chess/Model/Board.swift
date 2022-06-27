@@ -19,6 +19,28 @@ class Board {
             units[6][index] = Pawn(team: .white)
         }
         
+        units[0][0] = Rook(team: .black)
+        units[0][7] = Rook(team: .black)
+        
+        units[0][1] = Knight(team: .black)
+        units[0][6] = Knight(team: .black)
+        
+        units[0][2] = Biship(team: .black)
+        units[0][5] = Biship(team: .black)
+        
+        units[0][4] = Queen(team: .black)
+        
+        units[7][0] = Rook(team: .white)
+        units[7][7] = Rook(team: .white)
+        
+        units[7][1] = Knight(team: .white)
+        units[7][6] = Knight(team: .white)
+        
+        units[7][2] = Biship(team: .white)
+        units[7][5] = Biship(team: .white)
+        
+        units[7][4] = Queen(team: .white)
+        
         print("체스 보드를 초기화했습니다.")
     }
 }
