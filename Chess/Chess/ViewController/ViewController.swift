@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var board: Board?
+    var boardView: BoardView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +19,13 @@ class ViewController: UIViewController {
     }
     
     func setUp() {
-        board = Board()
+        boardView = BoardView()
     }
     
     func playChess() {
-        guard let board = board else { return }
+        guard let boardView = boardView else { return }
         
-        board.move(from: "A2", to: "A3")
+//        board.move(from: "A2", to: "A3")
     }
 }
 

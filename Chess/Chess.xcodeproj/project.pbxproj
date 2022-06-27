@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C7AB2F286987EC009572A0 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB2E286987EC009572A0 /* BoardView.swift */; };
 		43FDFD7628604EB1005C2CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */; };
 		43FDFD7828604EB1005C2CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD7728604EB1005C2CF4 /* SceneDelegate.swift */; };
 		43FDFD7A28604EB1005C2CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD7928604EB1005C2CF4 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43C7AB2E286987EC009572A0 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		43FDFD7228604EB1005C2CF4 /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43FDFD7728604EB1005C2CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43C7AB3028698844009572A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43C7AB2E286987EC009572A0 /* BoardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43C7AB312869884A009572A0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				43FDFD7928604EB1005C2CF4 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		43C7AB322869885F009572A0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43FDFD9228607FFC005C2CF4 /* String+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		43FDFD6928604EB1005C2CF4 = {
 			isa = PBXGroup;
 			children = (
@@ -86,11 +112,12 @@
 		43FDFD7428604EB1005C2CF4 /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				43C7AB312869884A009572A0 /* ViewController */,
+				43C7AB3028698844009572A0 /* View */,
 				43FDFD8928604FA4005C2CF4 /* Model */,
-				43FDFD9228607FFC005C2CF4 /* String+.swift */,
-				43FDFD7928604EB1005C2CF4 /* ViewController.swift */,
-				43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */,
+				43C7AB322869885F009572A0 /* Extension */,
 				43FDFD7728604EB1005C2CF4 /* SceneDelegate.swift */,
+				43FDFD7528604EB1005C2CF4 /* AppDelegate.swift */,
 				43FDFD7B28604EB1005C2CF4 /* Main.storyboard */,
 				43FDFD8028604EB2005C2CF4 /* LaunchScreen.storyboard */,
 				43FDFD7E28604EB2005C2CF4 /* Assets.xcassets */,
@@ -223,6 +250,7 @@
 				43FDFD7628604EB1005C2CF4 /* AppDelegate.swift in Sources */,
 				43FDFD8D28605024005C2CF4 /* Board.swift in Sources */,
 				43FDFD8F28605400005C2CF4 /* Unit.swift in Sources */,
+				43C7AB2F286987EC009572A0 /* BoardView.swift in Sources */,
 				43FDFD9328607FFC005C2CF4 /* String+.swift in Sources */,
 				43FDFD7828604EB1005C2CF4 /* SceneDelegate.swift in Sources */,
 			);
