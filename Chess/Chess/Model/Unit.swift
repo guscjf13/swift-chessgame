@@ -12,7 +12,7 @@ protocol Unit {
     var score: Int { get }
     var team: Team { get }
     
-    func movableLocations(from: String) -> [Coordinate]
+    func movableLocations(from: Coordinate) -> [Coordinate]
 }
 
 enum Team: String {

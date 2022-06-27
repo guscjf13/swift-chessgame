@@ -24,14 +24,12 @@ class Pawn: Unit {
         self.team = team
     }
     
-    func movableLocations(from: String) -> [Coordinate] {
-        let fromCoordinate = from.toCoordinate()
-        
+    func movableLocations(from: Coordinate) -> [Coordinate] {
         switch team {
         case .black:
-            return [Coordinate(x: fromCoordinate.x, y: fromCoordinate.y+1)]
+            return [Coordinate(x: from.x, y: from.y+1)]
         case .white:
-            return [Coordinate(x: fromCoordinate.x, y: fromCoordinate.y-1)]
+            return [Coordinate(x: from.x, y: from.y-1)]
         }
     }
 }
