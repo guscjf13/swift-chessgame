@@ -10,13 +10,14 @@ import UIKit
 
 class BoardView: UIView {
     
-    var board: Board
+    var board: Board? {
+        didSet {
+            display()
+        }
+    }
     
     override init(frame: CGRect) {
-        board = Board()
         super.init(frame: frame)
-        
-        display()
     }
     
     required init?(coder: NSCoder) {
@@ -25,6 +26,8 @@ class BoardView: UIView {
     
     // 체스 말 이동
     func move(from: String, to: String) {
+        guard let board = board else { return }
+
         let fromCoordinate = from.toCoordinate()
         let toCoordinate = to.toCoordinate()
         
@@ -40,11 +43,14 @@ class BoardView: UIView {
     
     // 체스 말이 움직일 수 있는지 여부 반환
     func isMovable(from: Coordinate, to: Coordinate) -> Bool {
-        guard let unit = board.units[from.y][from.x] else { return false }
+        guard let board = board,
+              let unit = board.units[from.y][from.x] else {
+                  return false
+              }
         
         var isReachable = false
         
-        for movableLocation in unit.movableLocations(from: from) {
+        for movableLocation in unit.movableLocations(from: from, board: board) {
             if to == movableLocation {
                 isReachable = true
             }
@@ -62,6 +68,8 @@ class BoardView: UIView {
     
     // 현재 보드상태 출력
     func display() {
+        guard let board = board else { return }
+        
         print("\n ABCDEFGH")
         for (index, unitLine) in board.units.enumerated() {
             print(index+1, terminator: "")
@@ -79,6 +87,8 @@ class BoardView: UIView {
     }
     
     func getScore(team: Team) -> Int {
+        guard let board = board else { return 0 }
+        
         var score = 0
         for unitLine in board.units {
             for unit in unitLine {
