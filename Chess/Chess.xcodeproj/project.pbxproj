@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C7557581988ED92E5B2A54 /* Pods_ChessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF66D9C11CE36C0FCCA78C4F /* Pods_ChessTests.framework */; };
 		43C7AB2F286987EC009572A0 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB2E286987EC009572A0 /* BoardView.swift */; };
 		43C7AB3428698CB7009572A0 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB3328698CB7009572A0 /* Knight.swift */; };
 		43C7AB3628698CCC009572A0 /* Biship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7AB3528698CCC009572A0 /* Biship.swift */; };
@@ -23,6 +24,7 @@
 		43FDFD9128605AE6005C2CF4 /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9028605AE6005C2CF4 /* Pawn.swift */; };
 		43FDFD9328607FFC005C2CF4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9228607FFC005C2CF4 /* String+.swift */; };
 		43FDFD9B286088D9005C2CF4 /* ChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFD9A286088D9005C2CF4 /* ChessTests.swift */; };
+		F8C6378C7B718A6F11988B63 /* Pods_Chess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D47FB9A1A9A6054ADDB7F6 /* Pods_Chess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F3BBF2D405836EAD309AA96 /* Pods-Chess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.release.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.release.xcconfig"; sourceTree = "<group>"; };
+		286509EA487832B58999DDA9 /* Pods-Chess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.debug.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.debug.xcconfig"; sourceTree = "<group>"; };
+		3F09D83D07C6D19BAEBC30C2 /* Pods-ChessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChessTests.debug.xcconfig"; path = "Target Support Files/Pods-ChessTests/Pods-ChessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43C7AB2E286987EC009572A0 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		43C7AB3328698CB7009572A0 /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
 		43C7AB3528698CCC009572A0 /* Biship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biship.swift; sourceTree = "<group>"; };
@@ -55,6 +60,9 @@
 		43FDFD9228607FFC005C2CF4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		43FDFD98286088D9005C2CF4 /* ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FDFD9A286088D9005C2CF4 /* ChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTests.swift; sourceTree = "<group>"; };
+		AF66D9C11CE36C0FCCA78C4F /* Pods_ChessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF027F298024A8407EFEC579 /* Pods-ChessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChessTests.release.xcconfig"; path = "Target Support Files/Pods-ChessTests/Pods-ChessTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5D47FB9A1A9A6054ADDB7F6 /* Pods_Chess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C6378C7B718A6F11988B63 /* Pods_Chess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C7557581988ED92E5B2A54 /* Pods_ChessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,8 @@
 				43FDFD7428604EB1005C2CF4 /* Chess */,
 				43FDFD99286088D9005C2CF4 /* ChessTests */,
 				43FDFD7328604EB1005C2CF4 /* Products */,
+				A19FD5EDE84D051EFD6C191E /* Pods */,
+				A3686D89346EABE0993C1216 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +168,27 @@
 			path = ChessTests;
 			sourceTree = "<group>";
 		};
+		A19FD5EDE84D051EFD6C191E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				286509EA487832B58999DDA9 /* Pods-Chess.debug.xcconfig */,
+				1F3BBF2D405836EAD309AA96 /* Pods-Chess.release.xcconfig */,
+				3F09D83D07C6D19BAEBC30C2 /* Pods-ChessTests.debug.xcconfig */,
+				DF027F298024A8407EFEC579 /* Pods-ChessTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3686D89346EABE0993C1216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D47FB9A1A9A6054ADDB7F6 /* Pods_Chess.framework */,
+				AF66D9C11CE36C0FCCA78C4F /* Pods_ChessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43FDFD8628604EB2005C2CF4 /* Build configuration list for PBXNativeTarget "Chess" */;
 			buildPhases = (
+				31168DB748308E43FEFD21FC /* [CP] Check Pods Manifest.lock */,
 				43FDFD6E28604EB1005C2CF4 /* Sources */,
 				43FDFD6F28604EB1005C2CF4 /* Frameworks */,
 				43FDFD7028604EB1005C2CF4 /* Resources */,
@@ -180,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43FDFD9E286088D9005C2CF4 /* Build configuration list for PBXNativeTarget "ChessTests" */;
 			buildPhases = (
+				AD06C084884E73E7280ABDB6 /* [CP] Check Pods Manifest.lock */,
 				43FDFD94286088D9005C2CF4 /* Sources */,
 				43FDFD95286088D9005C2CF4 /* Frameworks */,
 				43FDFD96286088D9005C2CF4 /* Resources */,
+				9A77E73C4A2EA77C5D2DC9E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +287,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31168DB748308E43FEFD21FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A77E73C4A2EA77C5D2DC9E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChessTests/Pods-ChessTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChessTests/Pods-ChessTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChessTests/Pods-ChessTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD06C084884E73E7280ABDB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43FDFD6E28604EB1005C2CF4 /* Sources */ = {
@@ -428,6 +528,7 @@
 		};
 		43FDFD8728604EB2005C2CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286509EA487832B58999DDA9 /* Pods-Chess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +556,7 @@
 		};
 		43FDFD8828604EB2005C2CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F3BBF2D405836EAD309AA96 /* Pods-Chess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,6 +584,7 @@
 		};
 		43FDFD9F286088D9005C2CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F09D83D07C6D19BAEBC30C2 /* Pods-ChessTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +602,7 @@
 		};
 		43FDFDA0286088D9005C2CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF027F298024A8407EFEC579 /* Pods-ChessTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
